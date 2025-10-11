@@ -1,1 +1,85 @@
-/*  your css code here. If applicable */
+/* === General Page Styling === */
+body {
+  background-color: #cfd6cf;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Header Image Section === */
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Main Table Styling === */
+#mainTable {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  border: 2px solid #999;
+}
+
+#mainTable td {
+  border: 1px solid #666;
+  padding: 15px;
+  vertical-align: top;
+}
+
+#mainTable img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Section Title (Middle Cell, First Row) === */
+.sectionTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* === Objective Section (Middle Cell, Second Row) === */
+.objective {
+  text-align: justify;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+/* === Side Panels (Left and Right Cells) === */
+.sideText {
+  font-size: 14px;
+  text-align: left;
+}
+
+.sideText strong {
+  display: block;
+  margin: 8px 0 4px 0;
+}
+
+.sideText a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+.sideText a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive Layout for Mobile === */
+@media (max-width: 700px) {
+  #mainTable, #mainTable tr, #mainTable td {
+    display: block;
+    width: 100%;
+  }
+
+  .sectionTitle {
+    font-size: 16px;
+  }
+
+  .objective {
+    font-size: 14px;
+  }
+}
